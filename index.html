@@ -42,16 +42,15 @@
 <p><img src="assets/screenshot.jpg" alt="screenshot"></p>
 <p>This project is alpha quality, please <a href="https://github.com/ungoldman/hi8/issues">report any bugs</a>! <small>and maybe fix them! &#x1F601;</small></p>
 <h2>Install</h2>
-<p>For now, you can install <code>hi8</code> via <a href="npmjs.com"><code>npm</code></a>.</p>
+<p>In <em>the future</em>, <strong>hi8</strong> will be packaged as an app and downloadable via the <a href="https://github.com/ungoldman/hi8/releases">releases</a> page.</p>
+<p>For now, you can install <strong>hi8</strong> via <a href="npmjs.com"><code>npm</code></a>.</p>
 <pre><code>npm install -g hi8
 </code></pre>
-<p>In <em>the future</em>, <code>hi8</code> will be packaged as an app and downloadable via the <a href="https://github.com/ungoldman/hi8/releases">releases</a> page.</p>
+<h3>Requirements</h3>
 <p><strong>Warning: requires &#x26A1;&#xFE0F; magick &#x26A1;&#xFE0F;</strong></p>
-<ul>
-<li><a href="http://www.imagemagick.org/script/index.php">imagemagick</a></li>
-<li><a href="http://www.graphicsmagick.org">graphicsmagick</a></li>
-</ul>
-<p>If you have <a href="http://brew.sh/">homebrew</a> installed, you can <code>brew install imagemagick graphicsmagick</code>.</p>
+<p>You&#x2019;ll need both <a href="http://www.imagemagick.org">ImageMagick</a> and <a href="http://www.graphicsmagick.org">GraphicsMagick</a> before <strong>hi8</strong> will work on your system.</p>
+<p>The high resolution satellite images from Himawari-8 come in fragments. At the resolution <strong>hi8</strong> uses, there are sixteen images that need to be stitched together to create a full picture of Earth. Here&#x2019;s an example fragment: <a href="http://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/2016/10/05/193000_2_0.png">http://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/2016/10/05/193000_2_0.png</a>.</p>
+<p>If you have <a href="http://brew.sh/">homebrew</a>, you can just <code>brew install imagemagick graphicsmagick</code> in your terminal to get them both installed .</p>
 <p>If you know of a better (dependency-free) way to process the images (or package <code>imagemagick</code> and <code>graphicsmagick</code> with the application), please <a href="https://github.com/ungoldman/hi8/issues/new">let me know</a>!</p>
 <h2>Usage</h2>
 <pre><code>hi8
@@ -72,16 +71,18 @@
 <li><a href="http://www.eorc.jaxa.jp/ptree/registration_top.html">JAXA account registration (for access to more data)</a></li>
 </ul>
 <h3>Related Projects</h3>
+<h4>Sites</h4>
 <ul>
-<li><a href="http://glittering.blue">Glittering Blue</a></li>
-<li><a href="https://github.com/celoyd/hi8">celoyd/hi8</a></li>
-<li><a href="https://gist.github.com/celoyd/b92d0de6fae1f18791ef">Himawari 8 animation tutorial</a></li>
-<li><a href="https://gist.github.com/celoyd/a4dd9202fe5c7978b114">deband python script</a></li>
-<li><a href="https://gist.github.com/celoyd/c2293929ab3fe97ea597">makeaday bash script</a></li>
-<li><a href="https://github.com/jakiestfu/himawari.js">himawari.js</a></li>
-<li><a href="https://github.com/ungoldman/himawari-bg">himawari-bg</a></li>
-<li><a href="https://github.com/ungoldman/himawari-urls">himawari-urls</a></li>
-<li><a href="https://github.com/ungoldman/himawari-history">himawari-history</a></li>
+<li><a href="http://glittering.blue">Glittering Blue</a>: A hi-res video of one day&#x2019;s rotation of Earth viewed from Himawari-8.</li>
+<li><a href="https://github.com/celoyd/hi8">celoyd/hi8</a>: Tools for making animations from Himawari-8 P-Tree data.</li>
+<li><a href="https://github.com/domoritz/">himawari-8-chrome</a>: Himawari 8 New Tab Page (Chrome Extension).</li>
+<li><a href="https://github.com/jakiestfu/himawari.js">himawari.js</a>: Download real-time images of Earth from the Himawari-8 satellite.</li>
+<li><a href="https://github.com/ungoldman/himawari-bg">himawari-bg</a>: Set the latest image from Himawari 8 as your desktop background.</li>
+<li><a href="https://github.com/ungoldman/himawari-urls">himawari-urls</a>: Get URLs for Himawari 8 image tiles based on a given date.</li>
+<li><a href="https://github.com/ungoldman/himawari-history">himawari-history</a>: Download all Himawari 8 images in a date range.</li>
+<li><a href="https://gist.github.com/celoyd/b92d0de6fae1f18791ef">Himawari-8 animation tutorial</a>: A way to make Himawari-8 animations.</li>
+<li><a href="https://gist.github.com/celoyd/a4dd9202fe5c7978b114">hi8-deband.py</a>: Python script for correcting noise along scanlines for Himawari-8 images.</li>
+<li><a href="https://gist.github.com/celoyd/c2293929ab3fe97ea597">makeday.sh</a>: Bash script for downloading and processing a day&#x2019;s worth of Himawari-8 images.</li>
 </ul>
 <h2>License</h2>
 <p><a href="license/">ISC</a></p>
