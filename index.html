@@ -39,7 +39,7 @@
 <p><strong>&#x201C;Himawari&#x201D; (&#x3072;&#x307E;&#x308F;&#x308A;) is Japanese for &#x201C;sunflower&#x201D;.</strong> &#x1F33B;</p>
 <p><strong><a href="http://himawari8.nict.go.jp/">Himawari 8</a></strong> is a <a href="https://en.wikipedia.org/wiki/Geostationary_orbit">geostationary</a> weather satellite deployed by the <a href="http://www.jma.go.jp/jma/indexe.html">Japan Meteorological Agency</a>. It takes photographs of Earth every 10 minutes.</p>
 <p><strong>hi8</strong> is a macOS menubar app that sets the latest image from Himawari-8 as your desktop background every 10 minutes.</p>
-<p><img src="assets/screenshot.jpg" alt="screenshot"></p>
+<p><img src="assets/screenshots/desktop.jpg" alt="desktop screenshot"></p>
 <p>This project is alpha quality, please <a href="https://github.com/ungoldman/hi8/issues">report any bugs</a>! <small>and maybe fix them! &#x1F601;</small></p>
 <h2>Install</h2>
 <p>In <em>the future</em>, <strong>hi8</strong> will be packaged as an app and downloadable via the <a href="https://github.com/ungoldman/hi8/releases">releases</a> page.</p>
@@ -47,14 +47,18 @@
 <pre><code>npm install -g hi8
 </code></pre>
 <h3>Requirements</h3>
-<p><strong>Warning: requires &#x26A1;&#xFE0F; magick &#x26A1;&#xFE0F;</strong></p>
-<p>You&#x2019;ll need both <a href="http://www.imagemagick.org">ImageMagick</a> and <a href="http://www.graphicsmagick.org">GraphicsMagick</a> before <strong>hi8</strong> will work on your system.</p>
-<p>The high resolution satellite images from Himawari-8 come in fragments. At the resolution <strong>hi8</strong> uses, there are sixteen images that need to be stitched together to create a full picture of Earth. Here&#x2019;s an example fragment: <a href="http://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/2016/10/05/193000_2_0.png">http://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/2016/10/05/193000_2_0.png</a>.</p>
-<p>If you have <a href="http://brew.sh/">homebrew</a>, you can just <code>brew install imagemagick graphicsmagick</code> in your terminal to get them both installed .</p>
-<p>If you know of a better (dependency-free) way to process the images (or package <code>imagemagick</code> and <code>graphicsmagick</code> with the application), please <a href="https://github.com/ungoldman/hi8/issues/new">let me know</a>!</p>
+<ul>
+<li><a href="http://www.graphicsmagick.org"><strong>&#x26A1;&#xFE0F; GraphicsMagick &#x26A1;&#xFE0F;</strong></a></li>
+</ul>
+<p>GraphicsMagick is an image processing library that helps stitch together the satellite images to produce a full picture of Earth.</p>
+<p>The high resolution satellite images from Himawari-8 come in fragments like <a href="http://himawari8-dl.nict.go.jp/himawari8/img/D531106/4d/550/2016/10/05/193000_2_0.png">this one</a>. At the resolution <strong>hi8</strong> uses, there are sixteen images that need to be stitched together to create a full picture of Earth.</p>
+<p>If you have <a href="http://brew.sh/">homebrew</a>, you can just <code>brew install graphicsmagick</code>.</p>
+<p>If you know of a better (dependency-free) way to process the images (or package <code>imagemagick</code> and <code>graphicsmagick</code> with the application), please <a href="https://github.com/ungoldman/hi8/issues/3">let me know</a>!</p>
 <h2>Usage</h2>
-<pre><code>hi8
-</code></pre>
+<p>Once <strong>hi8</strong> and <a href="http://www.graphicsmagick.org">GraphicsMagick</a> have been installed, all you need to do is run the <code>hi8</code> command from a terminal.</p>
+<p><img src="assets/screenshots/terminal.png" alt="menubar screenshot"></p>
+<p><strong>hi8</strong> will start in the background and from there it can be managed from the menubar.</p>
+<p><img src="assets/screenshots/menubar.png" alt="menubar screenshot"></p>
 <h2>Contributing</h2>
 <p>Contributions welcome! Please read the <a href="contributing/">contributing guidelines</a> first.</p>
 <h2>Change Log</h2>
